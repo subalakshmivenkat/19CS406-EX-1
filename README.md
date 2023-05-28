@@ -3,8 +3,9 @@
 DATE :
 
 AIM :
+```
 To implement socket programming date and time display from client to server using TCP Sockets.
-
+```
 ALGORITHM :
 
 Server:
