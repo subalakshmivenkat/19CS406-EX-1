@@ -2,13 +2,13 @@
 
 DATE :
 
-AIM :
-```
-To implement socket programming date and time display from client to server using TCP Sockets.
-```
-ALGORITHM :
+## AIM :
 
-Server:
+To implement socket programming date and time display from client to server using TCP Sockets.
+
+## ALGORITHM :
+
+## Server:
 
 1. Create a server socket and bind it to port.
 2. Listen for new connection and when a connection arrives, accept it.
@@ -20,7 +20,7 @@ Server:
 8. Close the server socket.
 9. Stop.
 
-Client:
+## Client:
 1. Create a client socket and connect it to the server‟s port number.
 2. Retrieve its own IP address using built-in function.
 3. Send its address to the server.
@@ -29,12 +29,12 @@ Client:
 6. Close the client socket.
 7. Stop.
 
-PROGRAM :
+## PROGRAM :
 
 Developed by Subalakshmi V
 Register number:212222040162
 
-CLIENT:
+## CLIENT:
 ```
 import socket
 s=socket.socket()
@@ -49,7 +49,7 @@ while True:
   except KeyError:
     c.send("Not Found".encode()) 
 ```
-SERVER:
+## SERVER:
 ```
 import socket
 s=socket.socket()
@@ -58,15 +58,15 @@ print(s.getsockname())
 print(s.recv(1024).decode())
 s.send("acknowledgement received from the server".encode())
 ```
-OUTPUT:
+## OUTPUT:
 
-CLIENT:
-```
+## CLIENT:
+
 ![image](https://github.com/subalakshmivenkat/19CS406-EX-1/assets/119393477/97e3ed1a-6f6a-4f18-bb95-6a603da0af94)
-```
-SERVER:
-```
+
+## SERVER:
+
 ![image](https://github.com/subalakshmivenkat/19CS406-EX-1/assets/119393477/b625f924-7ecd-41a7-82f6-28d768487739)
-```
-RESULT:
+
+## RESULT:
 Thus, the program to implement socket programming date and time display from client to server using TCP Sockets was successfully executed.
