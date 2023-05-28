@@ -57,11 +57,13 @@ print(s.recv(1024).decode())
 s.send("acknowledgement received from the server".encode())
 
 OUTPUT:
+
 CLIENT:
-![image](https://github.com/subalakshmivenkat/19CS406-EX-1/assets/119393477/97e3ed1a-6f6a-4f18-bb95-6a603da0af94)
+
+ ![image](https://github.com/subalakshmivenkat/19CS406-EX-1/assets/119393477/97e3ed1a-6f6a-4f18-bb95-6a603da0af94)
 
 SERVER:
-![image](https://github.com/subalakshmivenkat/19CS406-EX-1/assets/119393477/b625f924-7ecd-41a7-82f6-28d768487739)
+ ![image](https://github.com/subalakshmivenkat/19CS406-EX-1/assets/119393477/b625f924-7ecd-41a7-82f6-28d768487739)
 
 RESULT:
 Thus, the program to implement socket programming date and time display from client to server using TCP Sockets was successfully executed.
