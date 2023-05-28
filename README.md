@@ -8,6 +8,7 @@ To implement socket programming date and time display from client to server usin
 ALGORITHM :
 
 Server:
+
 1. Create a server socket and bind it to port.
 2. Listen for new connection and when a connection arrives, accept it.
 3. Send server‟s date and time to the client.
@@ -33,7 +34,7 @@ Developed by Subalakshmi V
 Register number:212222040162
 
 CLIENT:
-
+```
 import socket
 s=socket.socket()
 s.bind(('localhost',9000))
@@ -46,16 +47,16 @@ while True:
     c.send(address[ip].encode())
   except KeyError:
     c.send("Not Found".encode()) 
-
+```
 SERVER:
-
+```
 import socket
 s=socket.socket()
 s.connect(('localhost',9000))
 print(s.getsockname())
 print(s.recv(1024).decode())
 s.send("acknowledgement received from the server".encode())
-
+```
 OUTPUT:
 
 CLIENT:
